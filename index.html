@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator js project</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/images.jpeg" type="image/x-icon">
+</head>
+<body>
+    
+<div class="container">
+<div class="internalContainer">
+<div class="screen ">
+    <input id="display" type="text">
+</div>
+<p>
+    <input class="btn trig" type="button" value="sin" onclick="sin()">
+    <input class="btn trig" type="button" value="cos" onclick="cos()">
+    <input class="btn trig" type="button" value="tan"onclick="tan()">
+    <input class="btn trig" type="button" value="asin" onclick="asin()">
+    <input class="btn trig" type="button" value="acos" onclick="acos()">
+</p>
+<p>
+    <input class="btn trig" type="button" value="atan" onclick="atan()">
+    <input class="btn trig" type="button" value="π"onclick="pi()">
+    <input class="btn trig" type="button" value="ln"onclick="lan()">
+    <input class="btn trig" type="button" value="log" onclick="logarithm()">
+    <input class="btn trig" type="button" value="%" onclick="percentage()">
+</p>
+<p>
+    <input class="btn trig" type="button" value="sqd" onclick="square()">
+    <input class="btn trig" type="button" value="cube"onclick="cube()">
+    <input class="btn trig" type="button" value="√ " onclick="squareroot()">
+    <input class="btn trig" type="button" value="(" onclick="press('(')">
+    <input class="btn trig" type="button" value=")" onclick="press(')')">
+</p>
+<!-- numbers and operation -->
+
+<p  id="numStart">
+    <input class="btn other numValue" type="button" value="7" onclick="press(7)">
+    <input class="btn other numValue" type="button" value="8"onclick="press(8)">
+    <input class="btn other numValue" type="button" value="9"onclick="press(9)">
+    <input class="btn other red" type="button" value="Del" onclick="deleteValue()">
+    <input class="btn other red" type="button" value="C" onclick="clearValue()">
+</p>
+<p>
+    <input class="btn other numValue" type="button" value="4"onclick="press(4)">
+    <input class="btn other numValue" type="button" value="5"onclick="press(5)">
+    <input class="btn other numValue" type="button" value="6"onclick="press(6)">
+    <input class="btn operator" type="button" value="x" onclick="press('*')">
+    <input class="btn operator" type="button" value="/" onclick="press('/')">
+</p>
+<p>
+    <input class="btn other numValue" type="button" value="1"onclick=press(1)>
+    <input class="btn other numValue" type="button" value="2"onclick=press(2)>
+    <input class="btn other numValue" type="button" value="3" onclick=press(3)>
+    <input class="btn operator " type="button" value="+" onclick="press('+')">
+    <input class="btn operator" type="button" value="-" onclick="press('-')">
+</p>
+<p>
+    <input class="btn other numValue" type="button" value="0" onclick="press(0)">
+    <input class="btn other" type="button" value=" ±">
+    <input class="btn other" type="button" value="." onclick="press('.')">
+    <input class="btn operator" type="button" value="Exp">
+    <input class="btn operator" type="button" value="=" onclick="equal()">
+</p>
+</div>
+
+</div>
+
+
+<script src="/script.js"></script>
+
+</body>
+</html>
